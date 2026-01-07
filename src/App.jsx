@@ -1,20 +1,18 @@
 import { Box, TextField, InputAdornment, Typography } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import MicIcon from "@mui/icons-material/Mic";
-
 function App() {
   return (
     <Box
       sx={{
         height: "100vh",
-        backgroundColor: "#0F9D8A", // verde similar a tu fondo
+        backgroundColor: "#0F9D8A",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
       }}
     >
-      {/* Logo */}
       <Typography
         sx={{
           color: "white",
@@ -26,8 +24,6 @@ function App() {
       >
         Google
       </Typography>
-
-      {/* Buscador */}
       <TextField
         placeholder="Search Google or type a URL"
         variant="outlined"
@@ -35,17 +31,13 @@ function App() {
           width: "560px",
           backgroundColor: "white",
           borderRadius: "30px",
-
           "& fieldset": {
             border: "none",
           },
-
           boxShadow: "0px 1px 6px rgba(32,33,36,.28)",
-
           "&:hover": {
             boxShadow: "0px 1px 8px rgba(32,33,36,.35)",
           },
-
           "& .MuiInputBase-input": {
             padding: "14px 0",
             fontSize: "16px",
@@ -67,5 +59,4 @@ function App() {
     </Box>
   );
 }
-
 export default App;
